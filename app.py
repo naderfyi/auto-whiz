@@ -29,14 +29,20 @@ def load_data(json_filepath):
     with open(json_filepath, 'r') as file:
         data = json.load(file)
 
-    # Flatten the data
+    # Attempt to flatten the data
     flat_data = []
     for car_key, car_value in data.items():
-        flat_record = json_normalize(car_value)
-        flat_data.append(flat_record)
+        try:
+            flat_record = json_normalize(car_value)
+            flat_data.append(flat_record)
+        except Exception as e:
+            print(f"Error processing key {car_key}: {e}")
+            continue
+
+    if not flat_data:
+        return pd.DataFrame()
 
     df = pd.concat(flat_data, ignore_index=True)
-
     return df
 
 def get_vectorstore(df):
@@ -155,12 +161,13 @@ def get_conversation_chain(vectorstore):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    json_filepath = "ev_vehicles.json"
-    df = load_data(json_filepath)
-    if df.empty:
+    cars_json = "ev_vehicles.json"
+    
+    df_car = load_data(cars_json)
+    if df_car.empty:
         return jsonify({'error': 'Data not loaded correctly'}), 500
 
-    vectorstore = get_vectorstore(df)
+    vectorstore = get_vectorstore(df_car)
 
     # Recreate the conversation chain for each request
     conversation_chain = get_conversation_chain(vectorstore)
@@ -177,8 +184,8 @@ def index():
 
 @app.route('/clear_history', methods=['POST'])
 def clear_history():
-    session.pop('chat_history', None)  # This removes the chat history from the session
-    return redirect('/')  # Redirects back to the main index page
+    session.pop('chat_history', None)
+    return redirect('/')
 
 def handle_userinput(user_question, conversation_chain):
     # Ensure chat history is initialized
