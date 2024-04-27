@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoWhiz - Your Personal Car Guru</title>
-    <!-- Google Fonts - Using Poppins for a clean and modern look -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Link to custom stylesheets - Adjusted for direct link, replace with your actual path as needed -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -28,6 +26,13 @@
                     {% endfor %}
                 </div>
                 <form action="/" method="post" class="chat-form">
+                    <select name="user_profile">
+                        <option value="default">Default</option>
+                        <option value="frank">Frank</option>
+                        <option value="peter">Peter</option>
+                        <option value="sally">Sally</option>
+                        <option value="viola">Viola</option>
+                    </select>
                     <input type="text" name="user_question" placeholder="Ask any queries about Mercedes-Benz vehicles!" required>
                     <button type="submit">Send</button>
                 </form>

@@ -1,0 +1,1311 @@
+{
+    "Mercedes-Benz EQA 250 (2023-2024)": {
+      "car_name": "Mercedes-Benz EQA 250 (2023-2024)",
+      "price_info": { "germany": "€50,777" },
+      "range_info": {
+        "City - Cold Weather *": "385 km",
+        "Highway - Cold Weather *": "280 km",
+        "Combined - Cold Weather *": "335 km",
+        "City - Mild Weather *": "585 km",
+        "Highway - Mild Weather *": "365 km",
+        "Combined - Mild Weather *": "455 km"
+      },
+      "performance_info": {
+        "acceleration": "8.6 sec",
+        "top_speed": "160 km/h",
+        "electric_range": "395 km",
+        "total_power": "140 kW (190 PS)",
+        "total_torque": "385 Nm",
+        "drive": "Front"
+      },
+      "battery_info": {
+        "nominal_capacity": "69.7 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "300",
+        "architecture": "400 V",
+        "warranty_period": "8 years",
+        "warranty_mileage": "160,000 km",
+        "useable_capacity": "66.5 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "100s3p",
+        "nominal_voltage": "367 V",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "112 kW DC",
+          "fastcharge_power_10-80%": "100 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "395 km",
+          "vehicle_consumption": "168 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "528 km",
+          "rated_consumption": "144 Wh/km",
+          "vehicle_consumption": "126 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "456 km",
+          "rated_consumption": "167 Wh/km",
+          "vehicle_consumption": "146 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "173 Wh/km",
+        "highway_cold weather_cold_weather": "238 Wh/km",
+        "combined_cold weather_cold_weather": "199 Wh/km",
+        "city_mild weather_mild_weather": "114 Wh/km",
+        "highway_mild weather_mild_weather": "182 Wh/km",
+        "combined_mild weather_mild_weather": "146 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQB 250+ (2023-2024)": {
+      "car_name": "Mercedes-Benz EQB 250+ (2023-2024)",
+      "price_info": { "germany": "€53,514" },
+      "range_info": {
+        "City - Cold Weather *": "405 km",
+        "Highway - Cold Weather *": "300 km",
+        "Combined - Cold Weather *": "350 km",
+        "City - Mild Weather *": "610 km",
+        "Highway - Mild Weather *": "385 km",
+        "Combined - Mild Weather *": "480 km"
+      },
+      "performance_info": {
+        "acceleration": "8.9 sec",
+        "top_speed": "160 km/h",
+        "electric_range": "415 km",
+        "total_power": "140 kW (190 PS)",
+        "total_torque": "385 Nm",
+        "drive": "Front"
+      },
+      "battery_info": {
+        "nominal_capacity": "73.9 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "No Data",
+        "architecture": "400 V",
+        "warranty_period": "8 years",
+        "warranty_mileage": "160,000 km",
+        "useable_capacity": "70.5 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "No Data",
+        "nominal_voltage": "No Data",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "102 kW DC",
+          "fastcharge_power_10-80%": "90 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "415 km",
+          "vehicle_consumption": "170 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "536 km",
+          "rated_consumption": "152 Wh/km",
+          "vehicle_consumption": "132 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "463 km",
+          "rated_consumption": "175 Wh/km",
+          "vehicle_consumption": "152 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "174 Wh/km",
+        "highway_cold weather_cold_weather": "235 Wh/km",
+        "combined_cold weather_cold_weather": "201 Wh/km",
+        "city_mild weather_mild_weather": "116 Wh/km",
+        "highway_mild weather_mild_weather": "183 Wh/km",
+        "combined_mild weather_mild_weather": "147 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQS 450+ (2023-2024)": {
+      "car_name": "Mercedes-Benz EQS 450+ (2023-2024)",
+      "price_info": { "germany": "€109,551" },
+      "range_info": {
+        "City - Cold Weather *": "590 km",
+        "Highway - Cold Weather *": "465 km",
+        "Combined - Cold Weather *": "530 km",
+        "City - Mild Weather *": "885 km",
+        "Highway - Mild Weather *": "610 km",
+        "Combined - Mild Weather *": "730 km"
+      },
+      "performance_info": {
+        "acceleration": "6.1 sec",
+        "top_speed": "210 km/h",
+        "electric_range": "635 km",
+        "total_power": "265 kW (360 PS)",
+        "total_torque": "568 Nm",
+        "drive": "Rear"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "120.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "432",
+        "architecture": "400 V",
+        "warranty_period": "10 years",
+        "warranty_mileage": "250,000 km",
+        "useable_capacity": "108.4 kWh",
+        "cathode_material": "NCM811",
+        "pack_configuration": "108s4p",
+        "nominal_voltage": "396 V",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "207 kW DC",
+          "fastcharge_power_10-80%": "173 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "635 km",
+          "vehicle_consumption": "171 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "780 km",
+          "rated_consumption": "158 Wh/km",
+          "vehicle_consumption": "139 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "627 km",
+          "rated_consumption": "199 Wh/km",
+          "vehicle_consumption": "173 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "184 Wh/km",
+        "highway_cold weather_cold_weather": "233 Wh/km",
+        "combined_cold weather_cold_weather": "205 Wh/km",
+        "city_mild weather_mild_weather": "122 Wh/km",
+        "highway_mild weather_mild_weather": "178 Wh/km",
+        "combined_mild weather_mild_weather": "148 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQV 300 Long": {
+      "car_name": "Mercedes-Benz EQV 300 Long",
+      "price_info": { "germany": "€79,048" },
+      "range_info": {
+        "City - Cold Weather *": "335 km",
+        "Highway - Cold Weather *": "225 km",
+        "Combined - Cold Weather *": "275 km",
+        "City - Mild Weather *": "455 km",
+        "Highway - Mild Weather *": "275 km",
+        "Combined - Mild Weather *": "350 km"
+      },
+      "performance_info": {
+        "acceleration": "12.1 sec",
+        "top_speed": "160 km/h",
+        "electric_range": "315 km",
+        "total_power": "150 kW (204 PS)",
+        "total_torque": "365 Nm",
+        "drive": "Front"
+      },
+      "battery_info": {
+        "nominal_capacity": "100.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "288",
+        "architecture": "400 V",
+        "warranty_period": "No Data",
+        "warranty_mileage": "No Data",
+        "useable_capacity": "90.0 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "96s3p",
+        "nominal_voltage": "352 V",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Left Side - Front",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Left Side - Front",
+          "fastcharge_power_max": "110 kW DC",
+          "fastcharge_power_10-80%": "96 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "No" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "315 km",
+          "vehicle_consumption": "286 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "363 km",
+          "rated_consumption": "276 Wh/km",
+          "vehicle_consumption": "248 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "326 km",
+          "rated_consumption": "303 Wh/km",
+          "vehicle_consumption": "276 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "269 Wh/km",
+        "highway_cold weather_cold_weather": "400 Wh/km",
+        "combined_cold weather_cold_weather": "327 Wh/km",
+        "city_mild weather_mild_weather": "198 Wh/km",
+        "highway_mild weather_mild_weather": "327 Wh/km",
+        "combined_mild weather_mild_weather": "257 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQE 350+ (2023-2024)": {
+      "car_name": "Mercedes-Benz EQE 350+ (2023-2024)",
+      "price_info": { "germany": "Not Available" },
+      "range_info": {
+        "City - Cold Weather *": "500 km",
+        "Highway - Cold Weather *": "385 km",
+        "Combined - Cold Weather *": "440 km",
+        "City - Mild Weather *": "750 km",
+        "Highway - Mild Weather *": "500 km",
+        "Combined - Mild Weather *": "610 km"
+      },
+      "performance_info": {
+        "acceleration": "6.4 sec",
+        "top_speed": "210 km/h",
+        "electric_range": "530 km",
+        "total_power": "215 kW (292 PS)",
+        "total_torque": "565 Nm",
+        "drive": "Rear"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "100.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "360",
+        "architecture": "400 V",
+        "warranty_period": "No Data",
+        "warranty_mileage": "No Data",
+        "useable_capacity": "90.6 kWh",
+        "cathode_material": "NCM811",
+        "pack_configuration": "90s4p",
+        "nominal_voltage": "328 V",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "173 kW DC",
+          "fastcharge_power_10-80%": "141 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "530 km",
+          "vehicle_consumption": "171 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "671 km",
+          "rated_consumption": "158 Wh/km",
+          "vehicle_consumption": "135 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "545 km",
+          "rated_consumption": "193 Wh/km",
+          "vehicle_consumption": "166 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "181 Wh/km",
+        "highway_cold weather_cold_weather": "235 Wh/km",
+        "combined_cold weather_cold_weather": "206 Wh/km",
+        "city_mild weather_mild_weather": "121 Wh/km",
+        "highway_mild weather_mild_weather": "181 Wh/km",
+        "combined_mild weather_mild_weather": "149 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQE 300 (2023-2024)": {
+      "car_name": "Mercedes-Benz EQE 300 (2023-2024)",
+      "price_info": { "germany": "€67,187" },
+      "range_info": {
+        "City - Cold Weather *": "495 km",
+        "Highway - Cold Weather *": "380 km",
+        "Combined - Cold Weather *": "440 km",
+        "City - Mild Weather *": "745 km",
+        "Highway - Mild Weather *": "500 km",
+        "Combined - Mild Weather *": "605 km"
+      },
+      "performance_info": {
+        "acceleration": "7.3 sec",
+        "top_speed": "210 km/h",
+        "electric_range": "525 km",
+        "total_power": "180 kW (245 PS)",
+        "total_torque": "550 Nm",
+        "drive": "Rear"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "98.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "No Data",
+        "architecture": "400 V",
+        "warranty_period": "10 years",
+        "warranty_mileage": "250,000 km",
+        "useable_capacity": "89.0 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "No Data",
+        "nominal_voltage": "No Data",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "170 kW DC",
+          "fastcharge_power_10-80%": "120 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "525 km",
+          "vehicle_consumption": "170 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "621 km",
+          "rated_consumption": "165 Wh/km",
+          "vehicle_consumption": "143 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "532 km",
+          "rated_consumption": "195 Wh/km",
+          "vehicle_consumption": "167 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "180 Wh/km",
+        "highway_cold weather_cold_weather": "234 Wh/km",
+        "combined_cold weather_cold_weather": "202 Wh/km",
+        "city_mild weather_mild_weather": "119 Wh/km",
+        "highway_mild weather_mild_weather": "178 Wh/km",
+        "combined_mild weather_mild_weather": "147 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQB 350 4MATIC": {
+      "car_name": "Mercedes-Benz EQB 350 4MATIC",
+      "price_info": { "germany": "€58,197" },
+      "range_info": {
+        "City - Cold Weather *": "340 km",
+        "Highway - Cold Weather *": "250 km",
+        "Combined - Cold Weather *": "295 km",
+        "City - Mild Weather *": "500 km",
+        "Highway - Mild Weather *": "315 km",
+        "Combined - Mild Weather *": "395 km"
+      },
+      "performance_info": {
+        "acceleration": "6.2 sec",
+        "top_speed": "160 km/h",
+        "electric_range": "345 km",
+        "total_power": "215 kW (292 PS)",
+        "total_torque": "520 Nm",
+        "drive": "AWD"
+      },
+      "battery_info": {
+        "nominal_capacity": "69.7 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "300",
+        "architecture": "400 V",
+        "warranty_period": "8 years",
+        "warranty_mileage": "160,000 km",
+        "useable_capacity": "66.5 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "100s3p",
+        "nominal_voltage": "367 V",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "112 kW DC",
+          "fastcharge_power_10-80%": "100 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "345 km",
+          "vehicle_consumption": "193 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "448 km",
+          "rated_consumption": "171 Wh/km",
+          "vehicle_consumption": "148 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "396 km",
+          "rated_consumption": "192 Wh/km",
+          "vehicle_consumption": "168 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "196 Wh/km",
+        "highway_cold weather_cold_weather": "266 Wh/km",
+        "combined_cold weather_cold_weather": "225 Wh/km",
+        "city_mild weather_mild_weather": "133 Wh/km",
+        "highway_mild weather_mild_weather": "211 Wh/km",
+        "combined_mild weather_mild_weather": "168 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQA 250+ (2023-2024)": {
+      "car_name": "Mercedes-Benz EQA 250+ (2023-2024)",
+      "price_info": { "germany": "€52,205" },
+      "range_info": {
+        "City - Cold Weather": "410 km",
+        "Highway - Cold Weather": "300 km",
+        "Combined - Cold Weather": "350 km",
+        "City - Mild Weather": "615 km",
+        "Highway - Mild Weather": "385 km",
+        "Combined - Mild Weather": "485 km"
+      },
+      "performance_info": {
+        "acceleration": "8.6 sec",
+        "top_speed": "160 km/h",
+        "Electric Range": "420 km",
+        "total_power": "140 kW (190 PS)",
+        "total_torque": "385 Nm",
+        "drive": "Front"
+      },
+      "battery_info": {
+        "nominal_capacity": "73.9 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "No Data",
+        "architecture": "400 V",
+        "warranty_period": "8 years",
+        "warranty_mileage": "160,000 km",
+        "useable_capacity": "70.5 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "No Data",
+        "nominal_voltage": "No Data",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "102 kW DC",
+          "fastcharge_power_10-80%": "90 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "420 km",
+          "vehicle_consumption": "168 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "560 km",
+          "rated_consumption": "144 Wh/km",
+          "vehicle_consumption": "126 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "496 km",
+          "rated_consumption": "164 Wh/km",
+          "vehicle_consumption": "142 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "172 Wh/km",
+        "highway_cold weather_cold_weather": "235 Wh/km",
+        "combined_cold weather_cold_weather": "201 Wh/km",
+        "city_mild weather_mild_weather": "115 Wh/km",
+        "highway_mild weather_mild_weather": "183 Wh/km",
+        "combined_mild weather_mild_weather": "145 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQS 580 4MATIC": {
+      "car_name": "Mercedes-Benz EQS 580 4MATIC",
+      "price_info": { "germany": "€141,705" },
+      "range_info": {
+        "City - Cold Weather *": "555 km",
+        "Highway - Cold Weather *": "435 km",
+        "Combined - Cold Weather *": "495 km",
+        "City - Mild Weather *": "820 km",
+        "Highway - Mild Weather *": "565 km",
+        "Combined - Mild Weather *": "680 km"
+      },
+      "performance_info": {
+        "acceleration": "4.3 sec",
+        "top_speed": "210 km/h",
+        "electric_range": "590 km",
+        "total_power": "400 kW (544 PS)",
+        "total_torque": "858 Nm",
+        "drive": "AWD"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "120.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "432",
+        "architecture": "400 V",
+        "warranty_period": "10 years",
+        "warranty_mileage": "250,000 km",
+        "useable_capacity": "108.4 kWh",
+        "cathode_material": "NCM811",
+        "pack_configuration": "108s4p",
+        "nominal_voltage": "396 V",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "207 kW DC",
+          "fastcharge_power_10-80%": "173 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "590 km",
+          "vehicle_consumption": "184 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "719 km",
+          "rated_consumption": "172 Wh/km",
+          "vehicle_consumption": "151 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "589 km",
+          "rated_consumption": "212 Wh/km",
+          "vehicle_consumption": "184 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "195 Wh/km",
+        "highway_cold weather_cold_weather": "249 Wh/km",
+        "combined_cold weather_cold_weather": "219 Wh/km",
+        "city_mild weather_mild_weather": "132 Wh/km",
+        "highway_mild weather_mild_weather": "192 Wh/km",
+        "combined_mild weather_mild_weather": "159 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQB 300 4MATIC": {
+      "car_name": "Mercedes-Benz EQB 300 4MATIC",
+      "price_info": { "germany": "€55,519" },
+      "range_info": {
+        "City - Cold Weather": "340 km",
+        "Highway - Cold Weather": "250 km",
+        "Combined - Cold Weather": "295 km",
+        "City - Mild Weather": "500 km",
+        "Highway - Mild Weather": "315 km",
+        "Combined - Mild Weather": "395 km"
+      },
+      "performance_info": {
+        "acceleration": "8.0 sec",
+        "top_speed": "160 km/h",
+        "Electric Range": "345 km",
+        "total_power": "168 kW (228 PS)",
+        "total_torque": "390 Nm",
+        "drive": "AWD"
+      },
+      "battery_info": {
+        "nominal_capacity": "69.7 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "300",
+        "architecture": "400 V",
+        "warranty_period": "8 years",
+        "warranty_mileage": "160,000 km",
+        "useable_capacity": "66.5 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "100s3p",
+        "nominal_voltage": "367 V",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "112 kW DC",
+          "fastcharge_power_10-80%": "100 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "345 km",
+          "vehicle_consumption": "193 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "448 km",
+          "rated_consumption": "171 Wh/km",
+          "vehicle_consumption": "148 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "396 km",
+          "rated_consumption": "192 Wh/km",
+          "vehicle_consumption": "168 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "196 Wh/km",
+        "highway_cold weather_cold_weather": "266 Wh/km",
+        "combined_cold weather_cold_weather": "225 Wh/km",
+        "city_mild weather_mild_weather": "133 Wh/km",
+        "highway_mild weather_mild_weather": "211 Wh/km",
+        "combined_mild weather_mild_weather": "168 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQS 450 4MATIC": {
+      "car_name": "Mercedes-Benz EQS 450 4MATIC",
+      "price_info": { "germany": "€113,359" },
+      "range_info": {
+        "City - Cold Weather *": "570 km",
+        "Highway - Cold Weather *": "450 km",
+        "Combined - Cold Weather *": "510 km",
+        "City - Mild Weather *": "850 km",
+        "Highway - Mild Weather *": "585 km",
+        "Combined - Mild Weather *": "700 km"
+      },
+      "performance_info": {
+        "acceleration": "5.6 sec",
+        "top_speed": "210 km/h",
+        "electric_range": "610 km",
+        "total_power": "265 kW (360 PS)",
+        "total_torque": "800 Nm",
+        "drive": "AWD"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "120.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "432",
+        "architecture": "400 V",
+        "warranty_period": "10 years",
+        "warranty_mileage": "250,000 km",
+        "useable_capacity": "108.4 kWh",
+        "cathode_material": "NCM811",
+        "pack_configuration": "108s4p",
+        "nominal_voltage": "396 V",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "207 kW DC",
+          "fastcharge_power_10-80%": "173 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "610 km",
+          "vehicle_consumption": "178 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "719 km",
+          "rated_consumption": "172 Wh/km",
+          "vehicle_consumption": "151 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "589 km",
+          "rated_consumption": "212 Wh/km",
+          "vehicle_consumption": "184 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "190 Wh/km",
+        "highway_cold weather_cold_weather": "241 Wh/km",
+        "combined_cold weather_cold_weather": "213 Wh/km",
+        "city_mild weather_mild_weather": "128 Wh/km",
+        "highway_mild weather_mild_weather": "185 Wh/km",
+        "combined_mild weather_mild_weather": "155 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQS SUV 580": {
+      "car_name": "Mercedes-Benz EQS SUV 580",
+      "price_info": { "germany": "€147,923" },
+      "range_info": {
+        "City - Cold Weather *": "530 km",
+        "Highway - Cold Weather *": "380 km",
+        "Combined - Cold Weather *": "450 km",
+        "City - Mild Weather *": "750 km",
+        "Highway - Mild Weather *": "480 km",
+        "Combined - Mild Weather *": "595 km"
+      },
+      "performance_info": {
+        "acceleration": "4.7 sec",
+        "top_speed": "210 km/h",
+        "electric_range": "530 km",
+        "total_power": "400 kW (544 PS)",
+        "total_torque": "858 Nm",
+        "drive": "AWD"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "125.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "No Data",
+        "architecture": "400 V",
+        "warranty_period": "10 years",
+        "warranty_mileage": "250,000 km",
+        "useable_capacity": "118.0 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "No Data",
+        "nominal_voltage": "No Data",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "200 kW DC",
+          "fastcharge_power_10-80%": "160 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "530 km",
+          "vehicle_consumption": "223 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "673 km",
+          "rated_consumption": "200 Wh/km",
+          "vehicle_consumption": "175 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "594 km",
+          "rated_consumption": "228 Wh/km",
+          "vehicle_consumption": "199 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "223 Wh/km",
+        "highway_cold weather_cold_weather": "311 Wh/km",
+        "combined_cold weather_cold_weather": "262 Wh/km",
+        "city_mild weather_mild_weather": "157 Wh/km",
+        "highway_mild weather_mild_weather": "246 Wh/km",
+        "combined_mild weather_mild_weather": "198 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQS SUV Maybach": {
+      "car_name": "Mercedes-Benz EQS SUV Maybach",
+      "price_info": { "germany": "€200,634" },
+      "range_info": {
+        "City - Cold Weather *": "490 km",
+        "Highway - Cold Weather *": "355 km",
+        "Combined - Cold Weather *": "420 km",
+        "City - Mild Weather *": "690 km",
+        "Highway - Mild Weather *": "445 km",
+        "Combined - Mild Weather *": "550 km"
+      },
+      "performance_info": {
+        "acceleration": "4.4 sec",
+        "top_speed": "210 km/h",
+        "electric_range": "490 km",
+        "total_power": "484 kW (658 PS)",
+        "total_torque": "950 Nm",
+        "drive": "AWD"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "125.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "No Data",
+        "architecture": "400 V",
+        "warranty_period": "10 years",
+        "warranty_mileage": "250,000 km",
+        "useable_capacity": "118.0 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "No Data",
+        "nominal_voltage": "No Data",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "22 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "200 kW DC",
+          "fastcharge_power_10-80%": "160 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "490 km",
+          "vehicle_consumption": "241 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "612 km",
+          "rated_consumption": "220 Wh/km",
+          "vehicle_consumption": "193 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "560 km",
+          "rated_consumption": "241 Wh/km",
+          "vehicle_consumption": "211 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "241 Wh/km",
+        "highway_cold weather_cold_weather": "332 Wh/km",
+        "combined_cold weather_cold_weather": "281 Wh/km",
+        "city_mild weather_mild_weather": "171 Wh/km",
+        "highway_mild weather_mild_weather": "265 Wh/km",
+        "combined_mild weather_mild_weather": "215 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQS SUV 450+": {
+      "car_name": "Mercedes-Benz EQS SUV 450+",
+      "price_info": { "germany": "€110,801" },
+      "range_info": {
+        "City - Cold Weather *": "545 km",
+        "Highway - Cold Weather *": "390 km",
+        "Combined - Cold Weather *": "465 km",
+        "City - Mild Weather *": "775 km",
+        "Highway - Mild Weather *": "495 km",
+        "Combined - Mild Weather *": "615 km"
+      },
+      "performance_info": {
+        "acceleration": "6.8 sec",
+        "top_speed": "210 km/h",
+        "electric_range": "540 km",
+        "total_power": "265 kW (360 PS)",
+        "total_torque": "568 Nm",
+        "drive": "Rear"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "125.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "No Data",
+        "architecture": "400 V",
+        "warranty_period": "10 years",
+        "warranty_mileage": "250,000 km",
+        "useable_capacity": "118.0 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "No Data",
+        "nominal_voltage": "No Data",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "200 kW DC",
+          "fastcharge_power_10-80%": "160 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "540 km",
+          "vehicle_consumption": "219 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "720 km",
+          "rated_consumption": "188 Wh/km",
+          "vehicle_consumption": "164 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "605 km",
+          "rated_consumption": "225 Wh/km",
+          "vehicle_consumption": "195 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "217 Wh/km",
+        "highway_cold weather_cold_weather": "303 Wh/km",
+        "combined_cold weather_cold_weather": "254 Wh/km",
+        "city_mild weather_mild_weather": "152 Wh/km",
+        "highway_mild weather_mild_weather": "238 Wh/km",
+        "combined_mild weather_mild_weather": "192 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQE SUV 350": {
+      "car_name": "Mercedes-Benz EQE SUV 350",
+      "price_info": { "germany": "€89,548" },
+      "range_info": {
+        "City - Cold Weather *": "430 km",
+        "Highway - Cold Weather *": "315 km",
+        "Combined - Cold Weather *": "370 km",
+        "City - Mild Weather *": "615 km",
+        "Highway - Mild Weather *": "400 km",
+        "Combined - Mild Weather *": "490 km"
+      },
+      "performance_info": {
+        "acceleration": "6.6 sec",
+        "top_speed": "210 km/h",
+        "electric_range": "435 km",
+        "total_power": "215 kW (292 PS)",
+        "total_torque": "765 Nm",
+        "drive": "AWD"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "100.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "No Data",
+        "architecture": "400 V",
+        "warranty_period": "No Data",
+        "warranty_mileage": "No Data",
+        "useable_capacity": "90.6 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "No Data",
+        "nominal_voltage": "No Data",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "170 kW DC",
+          "fastcharge_power_10-80%": "120 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "435 km",
+          "vehicle_consumption": "208 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "566 km",
+          "rated_consumption": "183 Wh/km",
+          "vehicle_consumption": "160 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "479 km",
+          "rated_consumption": "218 Wh/km",
+          "vehicle_consumption": "189 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "211 Wh/km",
+        "highway_cold weather_cold_weather": "288 Wh/km",
+        "combined_cold weather_cold_weather": "245 Wh/km",
+        "city_mild weather_mild_weather": "147 Wh/km",
+        "highway_mild weather_mild_weather": "227 Wh/km",
+        "combined_mild weather_mild_weather": "185 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQE 350 4MATIC": {
+      "car_name": "Mercedes-Benz EQE 350 4MATIC",
+      "price_info": { "germany": "€74,149" },
+      "range_info": {
+        "City - Cold Weather": "480 km",
+        "Highway - Cold Weather": "370 km",
+        "Combined - Cold Weather": "425 km",
+        "City - Mild Weather": "715 km",
+        "Highway - Mild Weather": "480 km",
+        "Combined - Mild Weather": "585 km"
+      },
+      "performance_info": {
+        "acceleration": "6.3 sec",
+        "top_speed": "210 km/h",
+        "Electric Range": "510 km",
+        "total_power": "215 kW (292 PS)",
+        "total_torque": "765 Nm",
+        "drive": "AWD"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "98.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "No Data",
+        "architecture": "400 V",
+        "warranty_period": "10 years",
+        "warranty_mileage": "250,000 km",
+        "useable_capacity": "89.0 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "No Data",
+        "nominal_voltage": "No Data",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "170 kW DC",
+          "fastcharge_power_10-80%": "120 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "510 km",
+          "vehicle_consumption": "175 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "614 km",
+          "rated_consumption": "170 Wh/km",
+          "vehicle_consumption": "145 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "530 km",
+          "rated_consumption": "197 Wh/km",
+          "vehicle_consumption": "168 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "185 Wh/km",
+        "highway_cold weather_cold_weather": "241 Wh/km",
+        "combined_cold weather_cold_weather": "209 Wh/km",
+        "city_mild weather_mild_weather": "124 Wh/km",
+        "highway_mild weather_mild_weather": "185 Wh/km",
+        "combined_mild weather_mild_weather": "152 Wh/km"
+      }
+    },
+    "Mercedes-Benz EQS SUV 450": {
+      "car_name": "Mercedes-Benz EQS SUV 450",
+      "price_info": { "germany": "€114,609" },
+      "range_info": {
+        "City - Cold Weather *": "530 km",
+        "Highway - Cold Weather *": "380 km",
+        "Combined - Cold Weather *": "450 km",
+        "City - Mild Weather *": "750 km",
+        "Highway - Mild Weather *": "480 km",
+        "Combined - Mild Weather *": "595 km"
+      },
+      "performance_info": {
+        "acceleration": "6.1 sec",
+        "top_speed": "210 km/h",
+        "electric_range": "530 km",
+        "total_power": "265 kW (360 PS)",
+        "total_torque": "800 Nm",
+        "drive": "AWD"
+      },
+      "battery_info": {
+        "nominal_capacity\t\t\t\t\t\t\t*": "125.0 kWh",
+        "battery_type": "Lithium-ion",
+        "number_of_cells": "No Data",
+        "architecture": "400 V",
+        "warranty_period": "10 years",
+        "warranty_mileage": "250,000 km",
+        "useable_capacity": "118.0 kWh",
+        "cathode_material": "No Data",
+        "pack_configuration": "No Data",
+        "nominal_voltage": "No Data",
+        "form_factor": "No Data",
+        "name___reference": "No Data"
+      },
+      "charging_info": {
+        "home_destination": {
+          "charge_port": "Type 2",
+          "port_location": "Right Side - Rear",
+          "charge_power": "11 kW AC"
+        },
+        "fast_charging": {
+          "fastcharge_port": "CCS",
+          "fc_port_location": "Right Side - Rear",
+          "fastcharge_power_max": "200 kW DC",
+          "fastcharge_power_10-80%": "160 kW DC"
+        },
+        "plug_charge": { "plug_&_charge_supported": "Yes" }
+      },
+      "v2x_info": {
+        "v2l": { "v2l_supported": "No", "max_output_power": "-" },
+        "v2h": { "v2h_via_ac_supported": "No", "max_output_power": "-" },
+        "v2g": { "v2g_via_ac_supported": "No", "max_output_power": "-" }
+      },
+      "efficiency_info": {
+        "evdb_real_range": {
+          "range": "530 km",
+          "vehicle_consumption": "223 Wh/km"
+        },
+        "wltp_ratings_tel": {
+          "range": "673 km",
+          "rated_consumption": "200 Wh/km",
+          "vehicle_consumption": "175 Wh/km"
+        },
+        "wltp_ratings_teh": {
+          "range": "594 km",
+          "rated_consumption": "228 Wh/km",
+          "vehicle_consumption": "199 Wh/km"
+        }
+      },
+      "real_energy_consumption": {
+        "city_cold weather_cold_weather": "223 Wh/km",
+        "highway_cold weather_cold_weather": "311 Wh/km",
+        "combined_cold weather_cold_weather": "262 Wh/km",
+        "city_mild weather_mild_weather": "157 Wh/km",
+        "highway_mild weather_mild_weather": "246 Wh/km",
+        "combined_mild weather_mild_weather": "198 Wh/km"
+      }
+    }
+  }

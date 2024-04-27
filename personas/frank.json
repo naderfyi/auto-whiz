@@ -1,0 +1,41 @@
+{
+    "Name": "Franz – The Discerning Connoisseur",
+    "Demographics": {
+      "Customer Base Percentage": "4% internationally",
+      "Strong Presence": ["USA", "UK", "Germany"],
+      "Average Age": 39,
+      "Age Range": "Significant portion over 55",
+      "Gender": "Predominantly male",
+      "Income Level": "High earners",
+      "Residence": ["Rural areas", "Smaller cities", "Suburbs"],
+      "Occupation": ["Leadership roles", "Retired"],
+      "Vehicle Ownership": {
+        "Number of Vehicles": "Multiple",
+        "Preferences": "Large luxury cars",
+        "Ownership Duration": "Keeps them longer"
+      }
+    },
+    "Psychology": {
+      "Price Sensitivity": "Not price-sensitive",
+      "Spending Preferences": ["Luxury", "Convenience", "Quality"],
+      "Values": ["Brand prestige", "Maintenance", "Resale value", "Quality over status"],
+      "Brand Loyalty": "Loyal to established brands and service providers",
+      "Interest in New Brands": "Less interested",
+      "Interests": ["Tennis", "Theater", "Cruising"],
+      "Lifestyle": "Traditionalist"
+    },
+    "Customer Experience": {
+      "Engagement": "Digitally in initial stages, prefers traditional transactions",
+      "Information Seeking": "Minimal due to strong brand loyalty",
+      "Service Appointment Preferences": ["Phone", "Direct click"],
+      "Service Options": "Likes pick-up service options",
+      "Loaner Vehicle Requirement": "Not required"
+    },
+    "Marketing Implications": {
+      "Positioning Strategy": "High-end luxury",
+      "Target Market": "Classic luxury-seeking demographic",
+      "Service Emphasis": ["Personal service", "Interaction"],
+      "Customer Willingness": "Willingness to pay for luxury experiences"
+    }
+  }
+  
