@@ -1,4 +1,4 @@
-from flask import Flask, redirect, request, render_template, session
+from flask import Flask, redirect, request, jsonify, session
 from dotenv import load_dotenv
 from langchain_community.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
@@ -7,14 +7,23 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 import pandas as pd
 from langchain.globals import set_verbose
 import json
+from flask_cors import CORS
 from langchain.prompts.prompt import PromptTemplate
 from pandas import json_normalize
+from flask import send_from_directory, current_app
+import os
 
 set_verbose(False)
-
 load_dotenv()
 app = Flask(__name__)
+CORS(app)
 app.secret_key = 'nader'
+
+@app.route('/img/<path:filename>')
+def send_img(filename):
+    # Assuming images are stored in 'static/img'
+    img_directory = os.path.join(current_app.root_path, 'static', 'img')
+    return send_from_directory(img_directory, filename)
 
 def load_data(json_filepath):
     with open(json_filepath, 'r') as file:
@@ -149,7 +158,7 @@ def index():
     json_filepath = "ev_vehicles.json"
     df = load_data(json_filepath)
     if df.empty:
-        return render_template('index.html')
+        return jsonify({'error': 'Data not loaded correctly'}), 500
 
     vectorstore = get_vectorstore(df)
 
@@ -158,10 +167,13 @@ def index():
 
     if request.method == 'POST':
         user_question = request.form.get('user_question')
-        response = handle_userinput(user_question, conversation_chain)
-        return render_template('index.html', response=response, user_question=user_question)
+        if not user_question:
+            return jsonify({'error': 'No question provided'}), 400
 
-    return render_template('index.html')
+        response = handle_userinput(user_question, conversation_chain)
+        return jsonify({'response': response, 'user_question': user_question})
+
+    return jsonify({'message': 'Welcome to the EV Vehicles FAQ Bot'})
 
 @app.route('/clear_history', methods=['POST'])
 def clear_history():

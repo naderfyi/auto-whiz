@@ -1,0 +1,42 @@
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media (max-width: 1200px) {
+  .chatbot-container {
+    width: 70vw;
+  }
+}
+
+/* Media query for small screens (e.g., large phones) */
+@media (max-width: 768px) {
+  .chatbot-container {
+    width: 90vw;
+  }
+}
+
+/* Media query for extra small screens (e.g., small phones) */
+@media (max-width: 480px) {
+  .chatbot-container {
+    width: 95vw;
+  }
+}
