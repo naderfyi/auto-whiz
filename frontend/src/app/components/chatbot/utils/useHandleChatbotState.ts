@@ -20,27 +20,10 @@ export const useHandleChatbotState = () => {
 
   const [botResponseLoading, setBotResponseLoading] = useState(false);
 
-  useEffect(() => {
-    if (
-      conversationState.length > 0 &&
-      conversationState[conversationState.length - 1].Sender === Sender.User
-    ) {
-      setBotResponseLoading(true);
-      setTimeout(() => {
-        setConversationState((prev) => [
-          ...prev,
-          {
-            messages: "I am a bot, I am here to help you",
-            Sender: Sender.Bot,
-          },
-        ]);
-      }, 1000);
-      setBotResponseLoading(false);
-    }
-  });
   return {
     conversationState,
     setConversationState,
     botResponseLoading,
+    setBotResponseLoading,
   };
 };

@@ -28,6 +28,6 @@ const styles: Styles = {
     height: "80vh",
     borderRadius: "10px",
     backgroundColor: "rgba(47 ,45 ,45, 0.93)",
-    // width: "90%",
+    width: "550px",
   },
 };
