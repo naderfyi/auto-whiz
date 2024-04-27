@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoWhiz - Your Personal Car Guru</title>
+    <!-- Google Fonts - Using Poppins for a clean and modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link to custom stylesheets - Adjusted for direct link, replace with your actual path as needed -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="formContent">
+            <header>
+                <h1>🌟 AutoWhiz - Your Personal Car Guru! 🚗🛠️</h1>
+            </header>
+            <main>
+                {% if error %}
+                    <div class="error">{{ error }}</div>
+                {% endif %}
+                <div class="chat-history">
+                    {% for message in session.get('chat_history', []) %}
+                        <div class="{{ 'user' if loop.index % 2 == 0 else 'assistant' }}">
+                            <span class="icon">{{ '🤖' if loop.index % 2 == 0 else '👤' }}</span>
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+                <form action="/" method="post" class="chat-form">
+                    <input type="text" name="user_question" placeholder="Ask any queries about Mercedes-Benz vehicles!" required>
+                    <button type="submit">Send</button>
+                </form>
+            </main>
+            <div id="formFooter">
+                <form action="/clear_history" method="post">
+                    <button type="submit">Clear Chat</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+,Chassis_Number__c,Exterior_Color__c,Front_Tire_Size__c,Interior_Color__c,List_Price__c,Rear_Tire_Size__c,Status__c,Steering_Type__c,Vehicle_Definition__c,VIN__c,Name
+1,ZRT4567398,Black,19,White,"200,000.00$",19,In Garage,Electric,2024 AMG G 63 SUV,W1NYC7HJ6RX510902,2024 AMG G 63 SUV
+4,ZRT4567398,Black-Metallic,19,Mahagoni,"125,000.00$",19,In Garage,Electric,2023 EQE Sedan,WWNYC7HJ6RX509201,2023 EQE Sedan
+7,ZRT4567398,Red,19,White,"140,000.00$",19,In Garage,Electric,2023 EQS SUV,WWNYC7HJ6RX506504,2023 EQS SUV
+10,ZRT4567398,White,19,Mahagoni,"60,000.00$",19,In Garage,Electric,2023 GLB SUV,WWNYC7HJ6RX503807,2023 GLB SUV
+13,ZRT4567398,Red,19,Brown,"75,000.00$",19,In Garage,Electric,2023  GLE SUV,WWNYC7HJ6RX501110,2023  GLE SUV
+16,ZRT4567398,Black,19,White,"140,000.00$",19,In Garage,Electric,2024 G-Class SUV,WWNYC7HJ6RX498413,2024 G-Class SUV
+19,ZRT4567398,Brown,19,Mahagoni,"75,000.00$",19,In Garage,Electric,2024 E-Class Sedan,WWNYC7HJ6RX495716,2024 E-Class Sedan
+22,ZRT4567398,White,19,Black,"75,000.00$",19,In Garage,Electric,2024 E-Class Wagon,WWNYC7HJ6RX493019,2024 E-Class Wagon
+25,ZRT4567398,Brown,19,Beige,"75,000.00$",19,In Garage,Electric,2024 C-Class Cabriolet,WWNYC7HJ6RX490322,2024 C-Class Cabriolet
