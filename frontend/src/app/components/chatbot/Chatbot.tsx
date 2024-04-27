@@ -28,6 +28,7 @@ const styles: Styles = {
     height: "80vh",
     borderRadius: "10px",
     backgroundColor: "rgba(47 ,45 ,45, 0.93)",
+    boxShadow: "5px 5px 0px #000",
     width: "550px",
   },
 };

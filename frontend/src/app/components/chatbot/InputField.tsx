@@ -4,7 +4,11 @@ import { colors } from "../../../ressources/colors";
 import SendIcon from "../../../ressources/SendIcon.svg";
 import { useState } from "react";
 import { MessageType } from "./utils/useHandleChatbotState";
-import { handleSendPromptConnect } from "./utils/connect";
+import {
+  handleDeleteMemoryConnect,
+  handleSendPromptConnect,
+} from "./utils/connect";
+import Trash from "../../../ressources/Trash.svg";
 
 type InputFieldProps = {
   setConversationState: React.Dispatch<React.SetStateAction<any>>;
@@ -15,6 +19,7 @@ export const InputField = (props: InputFieldProps) => {
   const [prompt, setPrompt] = useState("");
 
   const handleSendPrompt = async () => {
+    if (prompt === "") return;
     setConversationState((prev: MessageType[]) => [
       ...prev,
       { messages: prompt, Sender: "user" },
@@ -27,6 +32,17 @@ export const InputField = (props: InputFieldProps) => {
       ]);
     });
     setPrompt("");
+  };
+
+  const handleDeleteHistory = () => {
+    setPrompt("");
+    handleDeleteMemoryConnect(prompt)
+      .then((_) => {
+        setConversationState([]);
+      })
+      .catch((error) => {
+        console.error("Error deleting memory:", error);
+      });
   };
 
   return (
@@ -44,8 +60,13 @@ export const InputField = (props: InputFieldProps) => {
           }
         }}
       />
-      <div style={styles.sendIcon} onClick={handleSendPrompt}>
-        <img src={SendIcon} alt="Send" width={24} height={24} />
+      <div style={styles.icons}>
+        <div onClick={handleDeleteHistory}>
+          <img src={Trash} alt="Delete" width={24} height={24} />
+        </div>
+        <div onClick={handleSendPrompt}>
+          <img src={SendIcon} alt="Send" width={24} height={24} />
+        </div>
       </div>
     </div>
   );
@@ -72,7 +93,7 @@ const styles: Styles = {
     background: "transparent",
     padding: "0 20px",
   },
-  sendIcon: {
+  icons: {
     display: "flex",
     justifyContent: "flex-end",
     padding: "0 20px",
@@ -80,5 +101,6 @@ const styles: Styles = {
     color: colors.greyDark,
     cursor: "pointer",
     width: "20%",
+    gap: "10px",
   },
 };
