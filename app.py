@@ -7,8 +7,6 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 import pandas as pd
 from langchain.globals import set_verbose
 import json
-import os
-from openai import OpenAI
 from langchain.prompts.prompt import PromptTemplate
 from pandas import json_normalize
 
@@ -19,20 +17,17 @@ app = Flask(__name__)
 app.secret_key = 'nader'
 
 def load_data(json_filepath):
-    # Load JSON data from a file
     with open(json_filepath, 'r') as file:
         data = json.load(file)
 
     # Flatten the data
     flat_data = []
     for car_key, car_value in data.items():
-        flat_record = json_normalize(car_value)  # Ensure this is the only line using json_normalize
+        flat_record = json_normalize(car_value)
         flat_data.append(flat_record)
 
-    # Combine all records into a single DataFrame
     df = pd.concat(flat_data, ignore_index=True)
 
-    # Return the DataFrame
     return df
 
 def get_vectorstore(df):
@@ -98,37 +93,40 @@ def get_vectorstore(df):
     car_descriptions = df[relevant_columns].astype(str).agg(' '.join, axis=1)
     
     # Assume the rest of the function processes these descriptions with embedding and vector store creation
-    embeddings = OpenAIEmbeddings()  # placeholder for your embedding method
-    vectorstore = FAISS.from_texts(texts=car_descriptions, embedding=embeddings)  # placeholder for your vector store method
+    embeddings = OpenAIEmbeddings()
+    vectorstore = FAISS.from_texts(texts=car_descriptions, embedding=embeddings)
     return vectorstore
 
 def get_conversation_chain(vectorstore):
     model_name = "gpt-3.5-turbo"
     temperature = 0.7
-
-    # Updated template to correctly use `context` as a variable.
+    
     qa_template = """
-        You are AutoWhiz, the AI assistant specializing in Mercedes-Benz marketing and sales. Your role is to guide customers toward selecting the ideal Mercedes-Benz electric vehicle that aligns with their needs.
+        As AutoWhiz, the AI assistant for Mercedes-Benz, the marketing, psychology, and sales expert, your task is to assist customers and get them to buy mercedes electric vehicles.
 
-        User Profile and Preferences:
-        {context}
+        Your goal is to help the customer find a Mercedes-Benz vehicle that meets their needs, and convince them to go electric.
 
-        User Question:
-        {question}
+        Begin by asking them questions about their preferences and what features they are looking for in their next car.
 
-        Start by engaging with the customer to understand their specific requirements for a new car. Inquire about their preferences, such as desired features, color, and budget.
+        If you don’t know enough about their preferences, ask them relevant questions about color, price range, and other car features to help them make the best decision.
 
-        Throughout the conversation, tactfully steer the discussion towards the benefits of electric vehicles. Emphasize the advantages of choosing an electric model, particularly focusing on Mercedes-Benz’s range of electric vehicles.
+        During your conversation, find natural and smooth ways to shift the focus towards electric vehicles, and try to convince the customer to prefer an EV over a combustion or hybrid car, and keep it relevant to mercedes's specific electric models. 
 
-        Ensure your responses are succinct and engaging, maintaining a friendly and conversational tone. Avoid sounding mechanical or overly scripted.
+        Please do not mention any other car companies, and focus solely on Mercedes-Benz models.
 
-        Your primary focus should be on showcasing the unique attributes of Mercedes-Benz electric vehicles without referencing competitors.
+        Keep your answers brief and concise, yet engaging and friendly.
+
+        Sound human, and avoid sounding too robotic or scripted.
+
+        context: {context}
 
         Now, how may I assist you today with your transition to an eco-friendly driving experience?
-    """
 
-    # Define the PromptTemplate with the correct variables to use in the template
-    QA_PROMPT = PromptTemplate(template=qa_template, input_variables=["context", "question"])
+        question: {question}
+        """
+        
+    # Define the PromptTemplate
+    QA_PROMPT = PromptTemplate(template=qa_template, input_variables=["context","question" ])
 
     # Initialize the chat model
     llm = ChatOpenAI(model_name=model_name, temperature=temperature)
@@ -160,9 +158,8 @@ def index():
 
     if request.method == 'POST':
         user_question = request.form.get('user_question')
-        user_profile = request.form.get('user_profile')  # Get the selected user profile from the form
-        response = handle_userinput(user_question, conversation_chain, user_profile)
-        return render_template('index.html', response=response, user_question=user_question, user_profile=user_profile)
+        response = handle_userinput(user_question, conversation_chain)
+        return render_template('index.html', response=response, user_question=user_question)
 
     return render_template('index.html')
 
@@ -171,62 +168,13 @@ def clear_history():
     session.pop('chat_history', None)  # This removes the chat history from the session
     return redirect('/')  # Redirects back to the main index page
 
-def load_user_profile(profile_name):
-    json_filepath = f"personas/{profile_name}.json"
-    try:
-        with open(json_filepath, 'r') as file:
-            user_profile_data = json.load(file)
-        return user_profile_data
-    except FileNotFoundError:
-        return {}
-
-def create_profile_description(user_profile_data):
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-    
-    # Convert user_profile_data to a string description, removing JSON structure and unnecessary whitespaces
-    profile_description = json.dumps(user_profile_data, separators=(',', ':'))
-    
-    # Remove the leading and trailing curly braces
-    profile_description = profile_description[1:-1]
-
-    # Prepare the messages for the API call
-    messages = [
-        {"role": "system", "content": "You are an intelligent assistant. Please summarize the following user profile in a concise manner."},
-        {"role": "user", "content": profile_description}
-    ]
-    
-    try:
-        # API call
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=messages,
-            temperature=0
-        )
-        # Extract and return the response content
-        response_message = response['choices'][0]['message']['content']
-        return response_message.strip()
-    except Exception as e:
-        print(f"Failed to generate profile description: {e}")
-        return "Error in generating profile description."
-
-def handle_userinput(user_question, conversation_chain, user_profile):
-    user_profile_data = load_user_profile(user_profile)
-    # print name
-    print(f"User: {user_profile_data.get('Name', '[name not specified]')}")
-    
+def handle_userinput(user_question, conversation_chain):
     # Ensure chat history is initialized
     if 'chat_history' not in session:
         session['chat_history'] = []
 
-    # Prepare a descriptive summary of the user profile data
-    user_description = create_profile_description(user_profile_data)
-    print(user_description)
-
-    # Combine the user profile description with the user question
-    combined_input = f"User Profile - {user_description} | User Question - {user_question}"
-
-    # Generate response from the conversational chain using the combined input
-    response = conversation_chain.invoke({'question': combined_input})
+    # Generate response from the conversational chain
+    response = conversation_chain.invoke({'question': user_question})
 
     # Prepare a serializable format of the response, e.g., extracting just the textual response
     response_text = [msg.content for msg in response['chat_history'] if hasattr(msg, 'content')]
