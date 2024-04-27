@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Styles } from "../../../App";
 import { colors } from "../../../ressources/colors";
 import { BotSingleMessageBubble } from "./BotSingleMessageBubble";
@@ -12,13 +12,19 @@ type ConversationBoxProps = {
 };
 
 export const ConversationBox = (props: ConversationBoxProps) => {
+  const conversationContainerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    console.log(props.conversationState);
+    // Scroll to the bottom smoothly on each conversation state update
+    conversationContainerRef.current?.scrollTo({
+      top: conversationContainerRef.current.scrollHeight,
+      behavior: "smooth",
+    });
   }, [props.conversationState]);
 
   return (
     <div style={styles.container}>
-      <div style={styles.conversationContainer}>
+      <div ref={conversationContainerRef} style={styles.conversationContainer}>
         {props.conversationState.map((message, index) => {
           return message.Sender === "bot" ? (
             <BotSingleMessageBubble key={index} message={message.messages} />
