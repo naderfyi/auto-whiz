@@ -184,7 +184,11 @@ def set_api_key():
     if not api_key:
         return jsonify({'error': 'API key is required'}), 400
     #session['API_KEY'] = api_key
-    os.environ['OPENAI_API_KEY'] = api_key
+    try:
+        os.environ['OPENAI_API_KEY'] = api_key
+        print(os.environ['OPENAI_API_KEY'])
+    except KeyError:
+        return jsonify({'error': 'Failed to set API key'}), 500
     return jsonify({'message': 'API key set successfully'}), 200
 
 def handle_userinput(user_question, conversation_chain):
