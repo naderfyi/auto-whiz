@@ -19,6 +19,8 @@ RUN npm run build
 # Install serve to serve the build folder
 RUN npm install -g serve
 
+ENV PORT 3001
+
 # Make port 3001 available outside this container
 EXPOSE 3001
 
