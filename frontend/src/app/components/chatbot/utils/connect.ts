@@ -1,5 +1,5 @@
 export const handleSendPromptConnect = (prompt: string) => {
-  const url = "http://127.0.0.1:5000/"; // URL where the Flask app is running
+  const url = "http://167.86.120.73:5004"; // URL where the Flask app is running
   const options = {
     method: "POST",
     headers: {
@@ -25,7 +25,7 @@ export const handleSendPromptConnect = (prompt: string) => {
 };
 
 export const handleDeleteMemoryConnect = (prompt: string) => {
-  const url = "http://127.0.0.1:5000/clear_history"; // URL where the Flask app is running
+  const url = "http://167.86.120.73:5004/clear_history"; // URL where the Flask app is running
   const options = {
     method: "POST",
     headers: {

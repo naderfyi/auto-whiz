@@ -19,7 +19,7 @@ export const Chatbot = () => {
     formData.append('api_key', apiKey);
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/set_api_key', {
+        const response = await fetch('http://167.86.120.73:5004/set_api_key', {
             method: 'POST',
             body: formData
         });
