@@ -34,4 +34,4 @@ ENV PORT $PORT
 EXPOSE $PORT
 
 # Use Gunicorn to serve the Flask application
-CMD ["gunicorn", "--bind", "0.0.0.0:$PORT", "app:app"]
+CMD ["gunicorn", "--workers=1", "--bind", "0.0.0.0:$PORT", "app:app"]
