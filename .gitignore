@@ -8,3 +8,7 @@ __pycache__
 *.a
 node_modules
 dist
+.git
+.vscode
+.DS_Store
+frontend/node_modules
