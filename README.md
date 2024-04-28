@@ -29,9 +29,20 @@ To set up the project locally, follow these steps:
 
 4. Run the Flask app:
     ```bash
-    python app.py
+    flask run
     ```
 
-5. Usage
-    - Open your browser and navigate to `http://127.0.0.1:5000/` to access the AutoWhiz web application.
-    - Enter your preferences and interact with the AI chatbot to receive personalized vehicle recommendations.
+5. Run the frontend server:
+    ```bash
+    cd frontend
+    npm install
+    npm start
+    ```
+
+6. Open your browser and navigate to `http://localhost:3000` to access the application.
+
+## Usage
+1. Enter your preferences for Mercedes-Benz electric vehicles.
+2. Chat with the AI to receive personalized recommendations.
+3. View the recommended vehicles and their attributes.
+4. Explore the details of each vehicle.
