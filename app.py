@@ -183,11 +183,11 @@ def set_api_key():
     api_key = request.form.get('api_key')
     if not api_key:
         return jsonify({'error': 'API key is required'}), 400
-    #session['API_KEY'] = api_key
     try:
         os.environ['OPENAI_API_KEY'] = api_key
-        print(os.environ['OPENAI_API_KEY'])
-    except KeyError:
+        print("API Key set in environment:", os.environ['OPENAI_API_KEY'])
+    except Exception as e:
+        print("Error setting API Key:", e)
         return jsonify({'error': 'Failed to set API key'}), 500
     return jsonify({'message': 'API key set successfully'}), 200
 
