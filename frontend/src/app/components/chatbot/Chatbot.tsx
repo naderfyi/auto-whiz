@@ -1,8 +1,8 @@
+import React, { useState } from "react";
 import { Styles } from "../../../App";
 import { ChatHeader } from "./ChatHeader";
 import { ConversationBox } from "./ConversationBox";
 import { useHandleChatbotState } from "./utils/useHandleChatbotState";
-import React, { useState } from "react";
 import SendIcon from "../../../ressources/SendIcon.svg";  // Import the Send icon
 
 export const Chatbot = () => {
@@ -40,19 +40,21 @@ export const Chatbot = () => {
   if (!isAuthenticated) {
     return (
       <div style={styles.container}>
-        <input
-          style={styles.input}
-          type="text"
-          value={apiKey}
-          onChange={handleApiKeyInput}
-          placeholder="Enter API Key"
-        />
-        <img
-          src={SendIcon}
-          alt="Set API Key"
-          onClick={sendApiKeyToServer}
-          style={styles.icon}
-        />
+        <div style={styles.inputContainer}>
+          <input
+            style={styles.input}
+            type="text"
+            value={apiKey}
+            onChange={handleApiKeyInput}
+            placeholder="Enter your OpenAI API Key"
+          />
+          <img
+            src={SendIcon}
+            alt="Set API Key"
+            onClick={sendApiKeyToServer}
+            style={styles.icon}
+          />
+        </div>
       </div>
     );
   }
@@ -77,22 +79,29 @@ const styles: Styles = {
     padding: "40px",
     height: "80vh",
     borderRadius: "10px",
-    backgroundColor: "rgba(47 ,45 ,45, 0.93)",
+    backgroundColor: "rgba(47, 45, 45, 0.93)",
     boxShadow: "5px 5px 0px #000",
     width: "550px",
   },
+  inputContainer: {
+    position: "relative",
+    width: "80%",
+  },
   input: {
-    margin: "20px",
     padding: "10px",
     borderRadius: "5px",
-    width: "80%",
+    width: "100%",
     height: "50px",
     border: "none",
     outline: "none",
-    background: "transparent",
+    background: "#ffffff", // White background
     paddingLeft: "20px",
   },
   icon: {
+    position: "absolute",
+    top: "50%",
+    right: "10px", // Adjust as necessary
+    transform: "translateY(-50%)",
     cursor: "pointer",
     width: "24px",
     height: "24px",
