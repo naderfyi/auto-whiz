@@ -15,6 +15,7 @@ export const Chatbot = () => {
   };
 
   const sendApiKeyToServer = async () => {
+    console.log("Sending API Key");  // Debug log
     const formData = new FormData();
     formData.append('api_key', apiKey);
 
