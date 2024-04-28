@@ -16,4 +16,4 @@ services:
       - ./frontend:/ap
     stdin_open: true
     tty: true
-    command: npm start
+    command: PORT=3001 npm start
