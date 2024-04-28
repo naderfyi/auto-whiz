@@ -13,13 +13,13 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/autowhiz.git
-   cd autowhiz
+   git clone https://github.com/naderfyi/auto-whiz.git
+   cd auto-whiz
    ```
 
 2. Install the dependencies:
    ```bash
-    pip install flask python-dotenv pandas langchain-community langchain-openai
+    pip install -r requirements.txt
    ```
 
 3. Create a .env file in the root directory and add your OpenAI API key:
