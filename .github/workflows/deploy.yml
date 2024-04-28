@@ -9,7 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
 
     - name: Deploy via SSH
       uses: appleboy/ssh-action@master
@@ -18,5 +19,11 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /root/portfolio
-          bash deploy_auto_whiz.sh 
+          set -e  # Stop the script on the first error
+          cd /root/portfolio || exit 1
+          if [ -f deploy_auto_whiz.sh ]; then
+            bash deploy_auto_whiz.sh
+          else
+            echo "Deployment script not found."
+            exit 1
+          fi
