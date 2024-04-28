@@ -19,8 +19,8 @@ RUN npm run build
 # Install serve to serve the build folder
 RUN npm install -g serve
 
-# Make port 3000 available outside this container
-EXPOSE 3000
+# Make port 3001 available outside this container
+EXPOSE 3001
 
 # Serve the build directory on port 3000
-CMD ["serve", "-s", "build", "-l", "3000"]
+CMD ["serve", "-s", "build", "-l", "3001"]

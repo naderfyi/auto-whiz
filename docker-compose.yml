@@ -3,15 +3,15 @@ services:
   backend:
     build: .
     ports:
-      - "5004:5000"
+      - "5004:5004"
     volumes:
       - .:/app
-    command: gunicorn --workers 3 --bind 0.0.0.0:5000 app:app
+    command: gunicorn --workers 3 --bind 0.0.0.0:5004 app:app
 
   frontend:
     build: ./frontend
     ports:
-      - "3001:3000"
+      - "3001:3001"
     volumes:
       - ./frontend:/ap
     stdin_open: true
