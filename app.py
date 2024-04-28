@@ -198,7 +198,7 @@ def handle_userinput(user_question, conversation_chain):
     # Prepare a serializable format of the response, e.g., extracting just the textual response
     response_text = [msg.content for msg in response['chat_history'] if hasattr(msg, 'content')]
 
-    # Flatten the chat history and update session
+    # Flatten the chat history and update session 
     session['chat_history'].extend(response_text)  # Use extend to add new messages to the flat list
 
     # Ensure to commit session changes
