@@ -178,6 +178,15 @@ def clear_history():
     session.pop('chat_history', None)
     return redirect('/')
 
+@app.route('/set_api_key', methods=['POST'])
+def set_api_key():
+    api_key = request.form.get('api_key')
+    if not api_key:
+        return jsonify({'error': 'API key is required'}), 400
+    #session['API_KEY'] = api_key
+    os.environ['API_KEY'] = api_key
+    return jsonify({'message': 'API key set successfully'}), 200
+
 def handle_userinput(user_question, conversation_chain):
     # Ensure chat history is initialized
     if 'chat_history' not in session:

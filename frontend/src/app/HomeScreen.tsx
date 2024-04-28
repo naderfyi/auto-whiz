@@ -18,7 +18,9 @@ const styles: Styles = {
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
-    // backgroundColor: "#282c34",
+    overflow: "hidden",
+    width: "100vw",
+    position: "relative",
     color: "white",
   },
   bgImage: {

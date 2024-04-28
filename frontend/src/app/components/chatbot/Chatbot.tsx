@@ -2,10 +2,60 @@ import { Styles } from "../../../App";
 import { ChatHeader } from "./ChatHeader";
 import { ConversationBox } from "./ConversationBox";
 import { useHandleChatbotState } from "./utils/useHandleChatbotState";
+import React, { useState } from "react";
+import SendIcon from "../../../ressources/SendIcon.svg";  // Import the Send icon
 
 export const Chatbot = () => {
+  const [apiKey, setApiKey] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const { conversationState, setConversationState } = useHandleChatbotState();
-  const { width } = window.screen;
+
+  const handleApiKeyInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setApiKey(event.target.value);
+  };
+
+  const sendApiKeyToServer = async () => {
+    const formData = new FormData();
+    formData.append('api_key', apiKey);
+
+    try {
+        const response = await fetch('http://127.0.0.1:5000/set_api_key', {
+            method: 'POST',
+            body: formData
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            setIsAuthenticated(true);
+        } else {
+            const errorData = await response.json();
+            alert(errorData.error || 'Failed to set API key');
+        }
+    } catch (error) {
+        console.error('Failed to fetch:', error);
+        alert('Failed to connect to the server. Please check your connection and try again.');
+    }
+};
+
+  if (!isAuthenticated) {
+    return (
+      <div style={styles.container}>
+        <input
+          style={styles.input}
+          type="text"
+          value={apiKey}
+          onChange={handleApiKeyInput}
+          placeholder="Enter API Key"
+        />
+        <img
+          src={SendIcon}
+          alt="Set API Key"
+          onClick={sendApiKeyToServer}
+          style={styles.icon}
+        />
+      </div>
+    );
+  }
 
   return (
     <div style={styles.container}>
@@ -30,5 +80,21 @@ const styles: Styles = {
     backgroundColor: "rgba(47 ,45 ,45, 0.93)",
     boxShadow: "5px 5px 0px #000",
     width: "550px",
+  },
+  input: {
+    margin: "20px",
+    padding: "10px",
+    borderRadius: "5px",
+    width: "80%",
+    height: "50px",
+    border: "none",
+    outline: "none",
+    background: "transparent",
+    paddingLeft: "20px",
+  },
+  icon: {
+    cursor: "pointer",
+    width: "24px",
+    height: "24px",
   },
 };
